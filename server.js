@@ -19,10 +19,16 @@ var app = express();
 
 app.get('/', function (req, res) {
   // res.send('Hello World!');
-  res.sendFile("./html/examples/simple.html");
-})
+  console.log("__dirname: "+ __dirname);
+  res.sendFile(__dirname+"/html/examples/index.html");
+});
 
-var server = app.listen(3000, function () {
+app.use(express.static(__dirname + '/html/examples/css'));
+app.use(express.static(__dirname + '/html/examples/images'));
+app.use(express.static(__dirname + '/html/examples/js'));
+app.use(express.static(__dirname + '/html/examples/'));
+
+var server = app.listen(port, function () {
 
   var host = server.address().address;
   var port = server.address().port;
@@ -33,13 +39,13 @@ var server = app.listen(3000, function () {
 /*  */
 
 // start the server
-/*server.listen(port, function(err) {
+server.listen(port, function(err) {
   if (err) {
     return console.log('Encountered error starting server: ', err);
   }
 
   console.log('server running at http://localhost:' + port + '/');
-});*/
+});
 
 // // add the repl
 // replify({
