@@ -1,0 +1,246 @@
+<!-- <html>
+<head>
+<title>rtc.io simple conferencing</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body onload="RTC()" class="pure-g">
+    <div class="pure-u-1-5">
+        <div id="l-video"></div>
+    </div>
+    <div class="pure-u-4-5" id="r-video"></div>
+<script src="../dist/rtc.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Артинский видео чат | artinec.ru - Арти чатрулетка</title>
+<meta name="description" content="Видео чат artinec.ru создан специально для жителей поселка Арти. В нем вы сможете найти новых знакомых или даже свою любовь!">
+<meta name="author" content="Павел Левчук">
+<meta name = "keywords" content = "artinec.ru, Арти, Артинский видеочат, чатрулетка Арти, Артинский район, видеочат Арти, чатрулетка Арти, чат рулетка арти, видео чат арти, поселок арти">
+<meta property="og:image" content="<img src="images/sponsor/artinec.png" />
+" 
+<meta name = "robots" content = "index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================================================================= -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/themes/type_08.css">
+<link rel="stylesheet" href="css/themes/color_14.css">
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!-- <link rel="stylesheet" href="layout.css"> -->
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================================================================= -->
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================================================================= -->
+<script src="js/libs/modernizr.min.js"></script>
+
+<!-- <script src="js/libs/jquery-1.8.3.min.js"></script> -->
+<script src="js/jquery-1.10.2.js"></script>
+
+<script src="js/libs/jquery.easing.1.3.min.js"></script>
+<script src="js/libs/jquery.fitvids.js"></script>
+<script src="js/script.js"></script>
+
+<style type="text/css">
+<!--
+.стиль2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.стиль7 {font-style: italic}
+.стиль9 {font-style: italic}
+.стиль11 {font-style: italic}
+.стиль14 {font-style: italic}
+.стиль18 {font-style: italic; color: #FDFC6E;}
+.стиль19 {color: #FDFC6E}
+-->
+</style>
+
+</head>
+<body onload="RTC()" class="pure-g">
+
+<!-- Write preloader to page - this allows the site to load for users with JS disabled -->
+<script type="text/javascript">
+	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
+</script>
+
+<div class="container">
+	
+	<div align="center">
+	  <!-- Header begins ========================================================================== -->
+  </div>
+	<header class="sixteen columns">
+        
+      <h3 align="center"><span class="стиль2">Артинская чат-рулетка		</span>            </h3>
+			<h1 align="center"><a href="http://artinec.ru/" target="_parent"><img src="images/logo.png" alt="Главная" width="175" height="53" longdesc="http://artinec.ru"></a></h1>
+			<div align="center">
+			  <!--
+			<img src="images/logo.png" width="275" height="35" alt="Logo" />
+			-->
+	      </div>
+	  <nav>
+			  <div align="center">
+			    <ul>
+			      <li>
+			        <button id="workPage">Главная</button>
+		          </li>
+			      <li>
+			        <button id="aboutPage">Наши спонсоры</button>
+		          </li>
+			      <!--<li><a href="http://wordpress.org" target="_blank">Blog</a></li>-->
+		          </ul>
+	    </div>
+		</nav>
+      
+	  <hr align="center" />
+	</header>
+
+	<div align="center">
+	  <!-- Header ends ============================================================================ -->
+     
+	      
+	<!-- Work page begins ======================================================================= -->
+	</div>
+  <div id="work">
+    <div id="overview" class="sixteen columns">
+			<h3 align="center"><script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,facebook,twitter,google" data-url="http://artinec.ru" data-title="Артинский видео чат | artinec.ru - Арти чатрулетка" data-description="Видео чат artinec.ru создан специально для жителей поселка Арти. В нем вы сможете найти новых знакомых или даже свою любовь!" data-user="1988606932"></div>
+			</h3>
+		    <h5 align="center">Помогите в развитии проекта - кликайте на кнопку своей соц.сети выше, чтобы поделиться ссылкой на наш сайт.<br />  
+      </span><span class="стиль19">Приятного общения!</span></h5>
+      <hr />
+	</div>
+		
+		<div class="eight columns стиль7" id="col1">
+		
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask">
+					  <div align="center"></div>
+					</svg>
+<!-- 					<div class="projectThumbnailHover">
+						<h4>Окно собеседника</h4>
+						<h5>Будет</h5>
+					</div> -->
+					
+					<!-- <img src="images/projects/project_01_desaturated.jpg" alt="Project 01" class="thumbnailImage" />		 -->
+
+
+			<div class="pure-u-4-5" id="r-video"></div>
+
+            <!-- <video id="remoteVideo" poster="images/projects/project_01_desaturated.jpg" style="background-color:#000;position:relative;width:400px;left:40px;" width="400" height="300" autoplay="autoplay"></video> -->
+
+          		</div>
+		  </div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask">
+					  <div align="center"></div>
+					</svg>
+<!-- 					<div class="projectThumbnailHover">
+						<h4>Мое окно</h4>
+						<h5>Будет</h5>
+					</div> -->
+					
+			<div class="pure-u-1-5">
+			    <div id="l-video"></div>
+			</div>
+
+          <!-- <video id="localVideo" muted="muted" poster="images/projects/project_02_desaturated.jpg" style="margin-top:16px;background-color:#000;position:relative;width:400px;left:40px;" width="400" height="300" autoplay="autoplay"></video> -->
+          <!-- <img src="images/projects/project_02_desaturated.jpg" alt="Project 02" class="thumbnailImage" />				 -->
+
+          </div>
+		  </div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= --><!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= --><!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= --><!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+            
+		  <!-- Project ends =================================================================== -->
+	  </div>
+		<em>
+		<!-- col1 -->
+		
+		<!-- Even numbered projects are dynamically moved into this second column via JS -->
+	      </em>
+		<div class="eight columns стиль9" id="col2">
+	    <div align="center"></div>
+		</div>
+	</div>
+  <em>
+	<!-- Work page ends ========================================================================= -->
+	
+	<!-- About page begins ====================================================================== -->
+  </em>
+  <div class="стиль11" id="about">
+		
+<div align="center">
+<a href="http://vk.com/podslyshano_arti" target="_blank"><img src="images/sponsor/pa.png" alt="Подслушано Арти" width="187" height="187" longdesc="http://vk.com/podslyshano_arti" /></a><a href="http://vk.com/artinecru" target="_blank"><img src="images/sponsor/arti.png" alt="Арти - бесплатные объявления" width="187" height="187" /></a><a href="http://vk.com/artinskii_raion" target="_blank"><img src="images/sponsor/arti2.png" alt="Артинский район - бесплатные объявления" width="187" height="187" /></a></div>
+  </div>
+  <em>
+	<!-- About page ends ======================================================================== -->
+	
+	<!-- Footer begins ========================================================================== -->
+	<footer class="sixteen columns">	  </footer>
+  </em>
+  <footer class="sixteen columns"><hr />
+		<ul class="стиль14" id="footerLinks">
+			<li>&copy; 2015 <a href="http://vk.com/pavel_levhuk" target="_blank">Павел Левчук</a>.</li>
+    <li><a href="mailto:otavio.ru@mail.ru">otavio.ru@mail.ru</a></li>
+			<li><a href="http://vk.com/artinec_ru" target="_blank">Наше сообщество ВКонтакте</a></li>
+            <li><a href="o_saite.html" target="_parent">О САЙТЕ</a></li>
+            <li><a href="pravila.html" target="_parent">ПРАВИЛА</a></li>
+		</ul>
+	</footer>
+	<em>
+	<!-- Footer ends ============================================================================ -->
+        </em></div>
+<em>
+<!-- container -->
+</em>
+
+
+<script src="../dist/rtc.js"></script>
+</body>
+</html>

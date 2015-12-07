@@ -1,0 +1,90 @@
+{
+  "name": "rtc",
+  "version": "3.3.0",
+  "description": "Build WebRTC conferencing applications with easy using rtc.io. This package provides a super-friendly entry point for working with WebRTC, dive into underling rtc.io modules for more configuration and customization opportunities",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "mkdir -p dist && browserify index.js -s RTC --debug | exorcist dist/rtc.js.map > dist/rtc.js",
+    "uglify": "uglifyjs --screw-ie8 --mangle --compress --in-source-map dist/rtc.js.map --source-map-include-sources --source-map dist/rtc.min.js.map --source-map-url rtc.min.js.map --output dist/rtc.min.js dist/rtc.js",
+    "build": "npm dedupe && npm run browserify && npm run uglify",
+    "prepublish": "npm run build",
+    "test": "zuul -- test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtc-io/rtc.git"
+  },
+  "keywords": [
+    "webrtc",
+    "rtc.io"
+  ],
+  "author": {
+    "name": "Damon Oehlman",
+    "email": "damon.oehlman@nicta.com.au"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/rtc-io/rtc/issues"
+  },
+  "homepage": "https://github.com/rtc-io/rtc",
+  "dependencies": {
+    "cog": "^1.0.0",
+    "fdom": "^1.0.0",
+    "kgo": "^2.0.0",
+    "rtc-attach": "^2.0.1",
+    "rtc-capture": "^1.0.1",
+    "rtc-quickconnect": "^4.1.0",
+    "whisk": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "exorcist": "^0.3.0",
+    "mocha": "^2.1.0",
+    "uglify-js": "^2.4.15",
+    "uuid": "^2.0.1",
+    "zuul": "^2.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Damon Oehlman",
+      "email": "damon.oehlman@nicta.com.au",
+      "url": "https://github.com/DamonOehlman"
+    },
+    {
+      "name": "Silvia Pfeiffer",
+      "email": "silvia.pfeiffer@nicta.com.au",
+      "url": "https://github.com/silviapfeiffer"
+    }
+  ],
+  "gitHead": "85ffb32735a98a5a3cb2de0d39cf4401950daae5",
+  "_id": "rtc@3.3.0",
+  "_shasum": "edb5cc59cd82f2b6665f43ffd6808d289faf6d25",
+  "_from": "rtc@*",
+  "_npmVersion": "2.8.3",
+  "_nodeVersion": "1.8.1",
+  "_npmUser": {
+    "name": "damonoehlman",
+    "email": "damon.oehlman@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "damonoehlman",
+      "email": "damon.oehlman@gmail.com"
+    },
+    {
+      "name": "silvia",
+      "email": "silviapfeiffer1@gmail.com"
+    },
+    {
+      "name": "cathylill",
+      "email": "cathygail.lill@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "edb5cc59cd82f2b6665f43ffd6808d289faf6d25",
+    "tarball": "http://registry.npmjs.org/rtc/-/rtc-3.3.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/rtc/-/rtc-3.3.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
